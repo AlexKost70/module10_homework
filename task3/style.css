@@ -15,13 +15,13 @@ body {
     display: flex;
 }
 
-.chat-inputs textarea {
-    resize: none;
+#msg-input {
+    width: 250px;
     border: 5px solid lawngreen;
     margin-right: 5px;
 }
 
-.chat-inputs textarea:focus {
+#msg-input:focus {
     outline: none;
 }
 

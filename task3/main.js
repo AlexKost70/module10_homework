@@ -57,9 +57,12 @@ const sendMessage = () => {
     if (!/^\s*$/.test(input.value)) {
         renderMessage(input.value, true);
         webSocket.send(input.value);
+        input.value = "";
     }
 }
 
+input.addEventListener("keypress", (event) => { 
+    event.key === "Enter" ? sendMessage() : 0 
+});
 sendBtn.addEventListener("click", sendMessage);
 geoBtn.addEventListener("click", sendLocation);
-
