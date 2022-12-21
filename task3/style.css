@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.chat {
+    margin-top: 20px;
+}
+
+.chat-inputs {
+    display: flex;
+}
+
+.chat-inputs textarea {
+    resize: none;
+    border: 5px solid lawngreen;
+    margin-right: 5px;
+}
+
+.chat-inputs textarea:focus {
+    outline: none;
+}
+
+.chat-inputs button {
+    border: 0;
+    background-color: lawngreen;
+    color: #000;
+}
+
+.chat-inputs .geo-btn {
+    margin-left: 5px;
+}
+
+.chat-messages {
+    margin-top: 10px;
+    border: 5px solid lawngreen;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+}
+
+.chat-messages .msg:first-of-type {
+    margin-top: 5px;
+}
+
+.chat-messages .msg {
+    border: 5px solid lawngreen;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+}
+
+.chat-messages .msg a {
+    text-decoration: none;
+}
+
+.chat-messages .user-message {
+    align-self: flex-end;
+}
+
+
